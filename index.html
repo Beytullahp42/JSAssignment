@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Kernel Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+<header class="header-wrap">
+    <div>
+        <a class="brand" href="index.html">
+            <img src="images/logo.png" alt="logo"/>
+            <h1>Kernel Academy</h1>
+        </a>
+    </div>
+    <div class="main-navigation">
+        <div class="navList">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+</header>
+<header class="header-wrap" id="header-clone">
+    <div>
+        <a class="brand" href="index.html">
+            <img src="images/logo.png" alt="logo"/>
+            <h1>Kernel Academy</h1>
+        </a>
+    </div>
+    <div class="main-navigation">
+        <div class="navList">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+</header>
+<div id="home-intro">
+    <div class="home-intro-text">
+        <h2>Unleash your coding potential</h2>
+        <p>Explore our comprehensive online courses and become a developer</p>
+    </div>
+    <img src="images/coder_guy.jpg" alt="coder"/>
+</div>
+<div class="container" id="feature-block">
+    <div class="block">
+        <img src="images/time.png" alt="time"/>
+        <h2>Pay Once, Watch Forever</h2>
+    </div>
+    <div class="block">
+        <img src="images/certificate.png" alt="certificate"/>
+        <h2>Earn Your Certificate of Completion</h2>
+    </div>
+    <div class="block">
+        <img src="images/refund.png" alt="refund"/>
+        <h2>30-Day Money-Back Guarantee</h2>
+    </div>
+</div>
+<div id="companies">
+    <h3>Multiple companies recommend Kernel Academy!</h3>
+    <div class="companies-images">
+        <img src="images/Coursera.png" alt="Coursera"/>
+        <img src="images/Google.png" alt="Google"/>
+        <img src="images/iau_logo.png" alt="IAU"/>
+        <img src="images/Microsoft_logo.png" alt="Microsoft"/>
+        <img src="images/udemy.png" alt="Udemy"/>
+        <img src="images/btk.jpeg" alt="BTK"/>
+    </div>
+</div>
+<br style="background: #f4ebff">
+<div id="courses">
+    <h3>Check out our popular courses!</h3>
+    <div class="container" id="course-blocks">
+        <div class="block" id="js" onclick="viewModal(this)">
+            <img src="images/javascript.webp" alt="javascript"/>
+            <h2>Javascript fundamentals</h2>
+            <p>Description</p>
+            <button onclick="disableButton(this)" class="course-button">Add to the wait list</button>
+        </div>
+        <div class="block" id="py" onclick="viewModal(this)">
+            <img src="images/python.webp" alt="python"/>
+            <h2>Python for beginners</h2>
+            <p>Description</p>
+            <button onclick="disableButton(this)" class="course-button">Add to the wait list</button>
+        </div>
+        <div class="block" id="rj" onclick="viewModal(this)">
+            <img src="images/react.webp" alt="react"/>
+            <h2>React.js essentials</h2>
+            <p>Description</p>
+            <button onclick="disableButton(this)" class="course-button">Add to the wait list</button>
+        </div>
+        <div class="block" id="fd" onclick="viewModal(this)">
+            <img src="images/flutter.webp" alt="angular"/>
+            <h2>Flutter & Dart</h2>
+            <p>Description</p>
+            <button onclick="disableButton(this)" class="course-button">Add to the wait list</button>
+        </div>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Modal Header</h2>
+        </div>
+        <div class="modal-body">
+            <img id="modal-img" alt="Course image" src="">
+            <p id="description">Some text in the Modal Body</p>
+        </div>
+    </div>
+
+</div>
+<div id="copyrights">
+    <p>&copy; 2024 Kernel Academy. All rights reserved.</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

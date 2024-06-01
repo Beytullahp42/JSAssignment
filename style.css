@@ -1,0 +1,318 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    font-size: 100%;
+}
+
+.header-wrap {
+    background-color: #8D5AF1;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px;
+    z-index: 10;
+    padding: 0;
+}
+
+.main-navigation {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     width: 100%;
+     background-color: #8D5AF1;
+     z-index: 10;
+     padding-bottom: 5px;
+ }
+
+.brand {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+  }
+
+.header-wrap img {
+    width: 15%;
+    border-radius: 8px;
+}
+
+.header-wrap a {
+    color: white;
+    text-decoration: none;
+}
+
+#header-clone {
+    opacity: 0;
+    position: static;
+}
+
+#home-intro {
+    display: flex;
+    justify-content: space-between;
+    background-color: #faf9ff;
+    padding-left: 20px;
+}
+
+#home-intro img {
+    width: 50%;
+}
+
+#home-intro h2 {
+    color: #6f3ff5;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+#home-intro .home-intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#companies {
+    background-color: #f4ebff;
+    text-align: center;
+    padding: 0.5%;
+}
+
+.companies-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    margin: 1%;
+    color: white;
+}
+
+#who-we-are {
+    background-color: #f4ebff;
+    text-align: center;
+    padding: 0.5%;
+}
+
+.companies-images img {
+    width: 150px;
+    filter: grayscale(100%);
+    transition: all 0.2s ease;
+}
+
+.companies-images img:hover {
+    filter: grayscale(0%);
+}
+
+#copyrights {
+    background-color: #8D5AF1;
+    color: white;
+    text-align: center;
+    padding: 0.5%;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navList {
+    display: flex;
+    width: max-content;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.block {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.block img {
+    width: 30%;
+    margin: 4%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 1%;
+}
+
+#courses {
+    background-color: #f4ebff;
+    text-align: center;
+    padding: 0.5%;
+}
+
+.course-button {
+    background-color: #8D5AF1;
+    color: white;
+    padding: 3%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1%;
+    transition: all 0.2s ease;
+}
+
+.course-button:hover:not(:disabled) {
+    background-color: #6f3ff5;
+    padding: 4%;
+}
+
+.course-button:disabled {
+    background-color: gray;
+}
+
+#courses img {
+    width: 100%;
+}
+
+#courses .block {
+    justify-content: space-between;
+    padding: 6px 6px 12px;
+}
+
+/*Taken from W3Schools.*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 15; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #8D5AF1;
+    color: white;
+    text-align: center;
+}
+
+.modal-body {
+    padding: 4px 16px;
+}
+
+.modal-body img {
+    width: 60%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1130px) {
+    .companies-images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+
+    }
+
+    #courses .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3%;
+        padding: 3%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .companies-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 40px;
+        text-align: center;
+    }
+
+    #home-intro {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #courses .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
