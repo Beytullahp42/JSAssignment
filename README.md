@@ -20,4 +20,4 @@ Kernel Academy aims to mimic popular online education platforms like Coursera or
 
 ## Live Preview
 
-You can view a live preview of the project [here](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Beytullahp42/JSAssignment/main/index.html).
+You can view a live preview of the project [here](https://htmlpreview.github.io/?https://github.com/Beytullahp42/JSAssignment/blob/master/index.html).
