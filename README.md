@@ -10,9 +10,8 @@ Kernel Academy aims to mimic popular online education platforms like Coursera or
 
 ## Used Technologies
 
-- **HTML**: For structuring the content.
-- **CSS**: For styling the website and ensuring responsiveness.
-- **JavaScript**: For adding interactive elements and dynamic behavior.
+- The application is built using HTML, CSS and JavaScript, leveraging WebStorm for development.
+
 
 ## Features
 
